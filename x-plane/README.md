@@ -75,7 +75,7 @@ These are functional enhancements to X-Plane. They range from enhanced Air Traff
 
 - [XCHecklist](https://forums.x-plane.org/index.php?/files/file/20785-xchecklist-linwinmac3264/)  
 Sure, it's a SIM, and if you crash, who cares? If you want a real experience, a good check-list is pretty crucial.  
-  My checklists are [here](./x-plane/xchecklists/)
+  My checklists are [here](./xchecklists/)
 
 [fps]:      ../definitions.md#fps
 [liveries]: ../definitions.md#liveries
