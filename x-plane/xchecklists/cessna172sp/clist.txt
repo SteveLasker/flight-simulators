@@ -1,0 +1,183 @@
+#X-Plane 10 C172SP Normal Procedures by pdayjr# Version 1.0
+sw_checklist:Start Up Checklist - Engine Start:Start Up
+sw_rcolsize:100
+sw_itemvoid:Engine Start Checklist (1/2)
+sw_itemvoid:________________________________________________
+sw_item:Parking Brake|ENGAGED:sim/flightmodel/controls/parkbrake:1
+sw_item:Fuel Selector|BOTH:sim/cockpit2/fuel/fuel_tank_selector:4
+sw_item:Prop Area|CLEAR
+sw_item:Battery|ON:sim/cockpit/electrical/battery_on:1
+sw_item:Beacon|ON:sim/cockpit/electrical/beacon_lights_on:1
+sw_item:Throttle|FULL:sim/cockpit2/engine/actuators/throttle_ratio:>0.97
+sw_item:Mixture|FULL RICH:sim/flightmodel/engine/ENGN_mixt:>0.97
+sw_item:Ignition|START:sim/cockpit2/engine/actuators/ignition_key:3
+sw_item:Alternator|ON:sim/cockpit/electrical/generator_on:1
+sw_item:Throttle|IDLE (smoothly):sim/cockpit2/engine/actuators/throttle_ratio:<0.05
+sw_item:Oil Press/Temp|CHECK
+sw_itemvoid:________________________________________________
+sw_itemvoid:Next - Pre-Taxi Checklist
+sw_checklist:Start Up Checklist - Pre-Taxi
+sw_itemvoid:Pre-Taxi Checklist
+sw_itemvoid:________________________________________________
+sw_rcolsize:80
+sw_item:Avionics Master|ON:sim/cockpit/electrical/avionics_on:1
+sw_item:Transponder|STDBY-1200
+sw_item:Instruments|SET
+sw_item:NAV Lights|ON:sim/cockpit/electrical/nav_lights_on:1
+sw_item:Taxi Light|ON:sim/cockpit2/switches/taxi_light_on:1
+sw_item:Flaps|UP:sim/cockpit2/controls/flap_ratio:<0.10
+sw_itemvoid:________________________________________________
+sw_itemvoid:Next - Engine Run Up Checklist 
+sw_checklist:Start Up Checklist - Engine Run Up
+sw_itemvoid:Engine Run Up Checklist
+sw_itemvoid:________________________________________________
+sw_rcolsize:100
+sw_item:Flight Instruments|CHECK
+sw_item:Oil Pressure|IN LIMITS
+sw_item:Mixture|ENRICHED:sim/flightmodel/engine/ENGN_mixt:>0.80
+sw_item:Throttle|1800 RPM:sim/cockpit2/engine/actuators/throttle_ratio:0.50|0.55
+sw_item:Engine Instruments|IN LIMITS
+sw_item:Annunciators|CHECK:sim/cockpit/warnings/annunciator_test_pressed:1
+sw_item:Throttle|1000 RPM:sim/cockpit2/engine/actuators/throttle_ratio:0.05|0.10
+sw_item:Parking Brake|DISENGAGED:sim/flightmodel/controls/parkbrake:0
+sw_itemvoid:________________________________________________
+sw_itemvoid:Next - Pre-Takeoff Checklist
+sw_checklist:Start Up Checklist - Pre-Takeoff
+sw_itemvoid:Pre-Takeoff Checklist
+sw_itemvoid:________________________________________________
+sw_rcolsize:110
+sw_item:Trim|TAKEOFF
+sw_item:Flaps|TAKEOFF:sim/cockpit2/controls/flap_ratio:<0.34
+sw_itemvoid:Normal - UP to 10 DEG
+sw_itemvoid:Short Field - 10 DEG
+sw_itemvoid:Soft Field - 10 DEG 
+sw_item:Radios|SET
+sw_item:Doors/Windows|CLOSED/LOCKED
+sw_item:Transponder|SET PER ATC
+sw_item:Strobe Lights|ON:sim/cockpit/electrical/strobe_lights_on:1
+sw_item:Landing Lights|ON:sim/cockpit/electrical/landing_lights_on:1
+sw_item:Mixture|FULL RICH:sim/flightmodel/engine/ENGN_mixt:>0.95
+sw_itemvoid:________________________________________________
+sw_itemvoid:Next - Normal Takeoff Checklist
+sw_checklist:Takeoff Checklist - Normal Takeoff:Normal Takeoff
+sw_rcolsize:80
+sw_itemvoid:Normal Takeoff Checklist
+sw_itemvoid:________________________________________________
+sw_item:Flaps|0-10 DEG:sim/cockpit2/controls/flap_ratio:<0.34
+sw_item:Throttle|FULL:sim/cockpit2/engine/actuators/throttle_ratio:>0.95
+sw_iteminfo:Rotate|50 KIAS
+sw_iteminfo:Liftoff|55 KIAS
+sw_item:Flaps|UP:sim/cockpit2/controls/flap_ratio:<0.02
+sw_iteminfo:Climb|70-85 KIAS
+sw_item:Climb Power|SET
+sw_item:Engine Instruments|IN LIMITS
+sw_item:Taxi Light|OFF:sim/cockpit2/switches/taxi_light_on:0
+sw_itemvoid:________________________________________________
+sw_itemvoid:Next - Short Field Takeoff Checklist
+sw_checklist:Takeoff Checklist - Short Field Takeoff:Short Field Takeoff
+sw_rcolsize:70
+sw_itemvoid:Short Field Checklist
+sw_itemvoid:________________________________________________
+sw_item:Flaps|10 DEG:sim/cockpit2/controls/flap_ratio:0.29|0.34
+sw_item:Throttle|FULL FWD:sim/cockpit2/engine/actuators/throttle_ratio:>0.95
+sw_iteminfo:Rotate|45 KIAS
+sw_iteminfo:Liftoff|50 KIAS
+sw_iteminfo:Clear Obstacles|57 KIAS
+sw_item:Flaps|UP:sim/cockpit2/controls/flap_ratio:<0.02
+sw_iteminfo:Climb|75 KIAS
+sw_item:Climb Power|SET
+sw_item:Engine Instruments|IN LIMITS
+sw_item:Taxi Light|OFF:sim/cockpit2/switches/taxi_light_on:0
+sw_itemvoid:________________________________________________
+sw_itemvoid:Next - Soft Field Takeoff Checklist
+sw_checklist:Takeoff Checklist - Soft Field Takeoff:Soft Field Takeoff
+sw_rcolsize:80
+sw_itemvoid:Soft Field Checklist
+sw_itemvoid:________________________________________________
+sw_item:Flaps|10 DEG:sim/cockpit2/controls/flap_ratio:0.29|0.34
+sw_item:Throttle|FULL FWD:sim/cockpit2/engine/actuators/throttle_ratio:>0.95
+sw_iteminfo:Roatate|MIN SPEED
+sw_iteminfo:Liftoff|MIN SPEED
+sw_iteminfo:Flaps|UP-55 KIAS
+sw_iteminfo:Climb|75 KIAS
+sw_item:Climb Power|SET
+sw_item:Engine Instruments|IN LIMITS
+sw_item:Taxi Light|OFF:sim/cockpit2/switches/taxi_light_on:0
+sw_itemvoid:________________________________________________
+sw_checklist:Landing Checklist:Landing
+sw_rcolsize:70
+sw_itemvoid:Landing Checklist (1/2)
+sw_itemvoid:________________________________________________
+sw_item:Fuel Selector|BOTH:sim/cockpit2/fuel/fuel_tank_selector:4
+sw_item:Mixture|FULL RICH:sim/flightmodel/engine/ENGN_mixt:>.097
+sw_item:ATC Clearance|AS REQ
+sw_item:Landing Lights|ON:sim/cockpit/electrical/landing_lights_on:1
+sw_itemvoid:ENTER TRAFFIC PATTERN
+sw_itemvoid:Downwind Leg
+sw_item:Airspeed|80 KIAS
+sw_item:Flaps|10 DEG:sim/cockpit2/controls/flap_ratio:0.29|0.34
+sw_itemvoid:________________________________________________
+sw_itemvoid:Next - Landing Checklist (2/2)
+sw_checklist:Landing Checklist
+sw_rcolsize:60
+sw_itemvoid:Landing Checklist (2/2)
+sw_itemvoid:________________________________________________
+sw_itemvoid:Base Leg
+sw_item:Airspeed|70 KIAS
+sw_item:Flaps|20 DEG:sim/cockpit2/controls/flap_ratio:0.64|0.68
+sw_itemvoid:FINAL APPROACH
+sw_item:Airspeed|60 KIAS
+sw_item:Flaps|30 DEG:sim/cockpit2/controls/flap_ratio:>0.90
+sw_item:Autopilot|OFF:sim/cockpit2/autopilot/autopilot_on:0
+sw_itemvoid:________________________________________________
+sw_itemvoid:Next - Missed Approach Checklist
+sw_checklist:Missed Approach
+sw_rcolsize:80
+sw_itemvoid:Missed Approach Checklist
+sw_itemvoid:________________________________________________
+sw_item:Throttle|FULL:sim/cockpit2/engine/actuators/throttle_ratio:>0.97
+sw_item:Flaps|20 DEG:sim/cockpit2/controls/flap_ratio:0.64|0.68
+sw_iteminfo:Climb|70-85 KIAS
+sw_itemFlaps|UP:sim/cockpit2/controls/flap_ratio:0
+sw_itemvoid:________________________________________________
+sw_itemvoid:	Next - Touch and Go Checklist
+sw_checklist:Touch and Go
+sw_rcolsize:80
+sw_itemvoid:Touch and Go Cheklist
+sw_itemvoid:________________________________________________
+sw_item:Throttle|FULL:sim/cockpit2/engine/actuators/throttle_ratio:>0.97
+sw_item:Mixture|AS REQ:sim/flightmodel/engine/ENGN_mixt:>0.6
+sw_item:Trim|TAKEOFF
+sw_iteminfo:Climb|70-85 KIAS
+sw_itemvoid:________________________________________________
+sw_itemvoid:	Next - After Landing Checklist
+sw_checklist:After Landing
+sw_rcolsize:70
+sw_itemvoid:After Landing Checklist
+sw_itemvoid:________________________________________________
+sw_iteminfo:CLEAR RUNWAY
+sw_item:Flaps|UP:sim/cockpit2/controls/flap_ratio:<0.25
+sw_item:Taxi Light|ON:sim/cockpit2/switches/taxi_light_on:1
+sw_iteminfo:Ailerons|AS REQ
+sw_item:Mixture|AS REQ:sim/flightmodel/engine/ENGN_mixt:>0.6
+sw_itemvoid:TAXI TO PARKING
+sw_item:Parking Brake|ENGAGED:sim/flightmodel/controls/parkbrake:1
+sw_item:Landing Lights|OFF:sim/cockpit/electrical/landing_lights_on:0
+sw_item:Taxi Light|OFF:sim/cockpit/electrical/taxi_light_on:0
+sw_item:Strobe Lights|OFF:sim/cockpit/electrical/strobe_lights_on:0
+sw_item:NAV Lights|OFF:sim/cockpit/electrical/nav_lights_on:0
+sw_item:Transponder|STANDBY
+sw_itemvoid:________________________________________________
+sw_itemvoid:Next - Engine Shutdown Checklist
+sw_checklist:Engine Shutdown
+sw_rcolsize:120
+sw_itemvoid:Engine Shutdown Checklist
+sw_itemvoid:________________________________________________
+sw_item:Throttle|1000 TO 1200 RPM:sim/cockpit2/engine/actuators/throttle_ratio:0.05|0.25
+sw_item:Mixture|CUTOFF (smoothly):sim/flightmodel/engine/ENGN_mixt:<0.05
+sw_item:Throttle|IDLE:sim/cockpit2/engine/actuators/throttle_ratio:<0.10
+sw_item:Alternator|OFF:sim/cockpit/electrical/generator_on:0
+sw_item:Beacon|OFF:sim/cockpit/electrical/beacon_lights_on:0
+sw_item:Avionics Master|OFF:sim/cockpit/electrical/avionics_on:0
+sw_item:Battery|OFF:sim/cockpit/electrical/battery_on:0
+sw_item:Fuel Selector|LEFT or RIGHT:sim/cockpit2/fuel/fuel_tank_selector:!4

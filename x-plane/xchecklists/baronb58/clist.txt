@@ -1,0 +1,204 @@
+sw_checklist: CHECKLIST FOR BEECHCRAFT Baron B58
+sw_itemvoid: Version 0.1
+sw_itemvoid: by SteveLas
+sw_itemvoid: needs a bunch of cleanup, but gets me off the ground and landing
+sw_continue: PREFLIGHT
+
+sw_checklist: PREFLIGHT
+sw_colsize:60
+sw_itemvoid:.................................................
+sw_item: Parking Brakes|SET:sim/flightmodel/controls/parkbrake:>0
+sw_item: Battery Master switch|ON:sim/cockpit/electrical/battery_on:1
+sw_item: Landing Gear|DOWN:sim/cockpit2/controls/gear_handle_down:1
+sw_item: Beacon|ON:sim/cockpit/electrical/beacon_lights_on:1
+sw_item: Panel Lights|ON AT NIGHT|sim/lights/landing_lights_on:1
+sw_item: Landing Lights|ON AT NIGHT|sim/lights/landing_lights_on:1
+sw_item: Taxi Lights|ON:sim/lights/taxi_lights_on:1
+sw_item: Navigation Lights|ON AT NIGHT:sim/lights/nav_lights_on:1
+sw_item: Strobe Lights|ON:sim/cockpit/electrical/strobe_lights_on:1
+sw_item: Exterior Inspection|CHECK
+sw_continue:BEFORE STARTING ENGINE
+
+sw_checklist: BEFORE STARTING ENGINE
+sw_rcolsize:60
+sw_itemvoid:.................................................
+sw_item: Check Annunciator Panel Warning Lights : CHECK
+sw_item: Fuel Quantity|CHECK QUANTITY
+sw_item: Landing Gear Lights|3 GREEN
+sw_item: Panel Lighting|AS REQUIRED
+sw_item: Fuel Transfer Pumps|AUTO
+sw_item: Avionics Master Switch|OFF:sim/cockpit/electrical/avionics_off:1
+sw_item: Engine Cowl Flaps|Both OPEN
+sw_item: Power Levers|IDLE:sim/cockpit2/engine/actuators/throttle_ratio_all:0
+sw_item: Propellor Levers|FULL FORWARD:(sim/flightmodel/engine/ENGN_prop[0]:>0.9)&&(sim/flightmodel/engine/ENGN_prop[1]:>0.9)
+sw_item: Mixture Levers|FULL RICH:sim/cockpit2/engine/actuators/mixture_ratio_all:>1.0
+sw_remark: Next Checklist is Engine Start
+sw_continue: ENGINE STARTIN
+
+sw_checklist: ENGINE START
+sw_rcolsize:60
+sw_itemvoid:.................................................
+sw_remark: Engine 1
+sw_item: Left Fule Boost Pump 1|On:sim/fuel/fuel_pump_1_on:1
+sw_item: Engine Start Switch|ON UNTIL ENGINES IDLING:sim/flightmodel/engine/ENGN_ITT_c[0]:>900
+sw_item: Left Power|Idle
+sw_item: Left Alternator Switch|ON:sim/electrical/generator_1_on:1
+sw_item: Left Fule Boost Pump|OFF
+sw_item: Left Oil Pressure|CHECK
+sw_item: Left Turbine RPM|CHECK
+sw_remark: Engine 2
+sw_item: Right Fule Boost Pump 2|On:sim/fuel/fuel_pump_2_on:1
+sw_item: Engine Start Switch|ON UNTIL ENGINES IDLING:sim/flightmodel/engine/ENGN_ITT_c[1]:>900
+sw_item: Right Power|Idle 
+sw_item: Right Alternator Switch|ON:sim/electrical/generator_2_on:1
+sw_item: Right Fule Boost Pump|OFF
+sw_item: Right Oil Pressure|CHECK
+sw_item: Right Turbine RPM|CHECK
+sw_continue: BEFORE TAXI
+
+sw_checklist: BEFORE TAXI
+sw_rcolsize:60
+sw_remark: Before Taxi
+sw_item: File Flight Plan | Check
+sw_itemvoid:.................................................
+sw_item: Flaps |RETRACTED:sim/flightmodel2/controls/flap_handle_deploy_ratio:0.0
+sw_item: Avionics Master Switch|ON:sim/cockpit/electrical/avionics_on:1
+sw_item: Lights|AS REQUIRED
+sw_item: Radios|SET
+sw_item: Altimeter|SET
+sw_item: Transponder|STANDBY:sim/cockpit/radios/transponder_mode:1
+sw_continue: TAXI
+
+sw_checklist: TAXI
+sw_rcolsize:60
+sw_itemvoid:................................................
+sw_item: Taxi Lights|ON:sim/cockpit/electrical/taxi_light_on:1
+sw_item: Parking Brakes|RELEASE:sim/flightmodel/controls/parkbrake:0
+sw_item: Brakes|TEST:sim/flightmodel/controls/parkbrake:>0
+sw_item: Ready|NEXT CHECKLIST
+sw_continue: BEFORE TAKEOFF
+
+sw_checklist: BEFORE TAKEOFF
+sw_rcolsize:60
+sw_item: Before Takeoff |READY
+sw_itemvoid:.................................................
+sw_item: Parking Brakes|SET:sim/flightmodel/controls/parkbrake:>0
+sw_item: Annunciator lights|EXTINGUISHED or CONSIDERED
+sw_item: Flight and Engine Instruments|CHECK
+sw_item: Elevator Trim|SET FOR TAKEOFF
+sw_item: Rudder Trim|ZERO:sim/flightmodel2/controls/rudder_trim:-0.02|0.02
+sw_item: Aileron Trim|ZERO:sim/flightmodel2/controls/ail_trim:-0.02|0.02
+sw_item: Proppeller Levers|FULL 
+sw_item: Ice Protection Equipment|USE WHEN O.A.T. BELOW 5 degrees C
+sw_item: Landing Lights|ON AT NIGHT
+sw_item: Flaps|ON AS REQUIRED
+sw_item: Transponder|ON:sim/cockpit/radios/transponder_mode:2
+sw_item: Mixture Lever|FULL :sim/cockpit2/engine/actuators/mixture_ratio_all:1.0
+sw_continue: TAKEOFF
+
+
+sw_checklist: TAKEOFF
+sw_rcolsize:60
+sw_item: Takeoff|READY
+sw_item: Parking Break|OFF
+sw_item: Throttles|FULL:sim/cockpit2/engine/actuators/throttle_ratio_all:>0.95
+sw_itemvoid:.................................................
+sw_itemvoid: 150 IAS / 2000 RPM
+sw_itemvoid:.................................................
+sw_itemvoid: Rotate at 85+ kts
+sw_itemvoid: Climb Away|92 kts Best Nagle
+sw_itemvoid: Climb Away|105 kts Best Rate
+sw_item: Propellor Controls|FULL FORWARD:(sim/flightmodel/engine/ENGN_prop[0]:>0.9)&&(sim/flightmodel/engine/ENGN_prop[1]:>0.9)
+sw_item: Positive Rate of Climb|ESTABLISHED:sim/flightmodel/position/vh_ind_fpm:>300
+sw_item: Landing Gear|UP:sim/cockpit2/controls/gear_handle_down:0
+sw_item: Landing Lights|OFF:sim/cockpit/electrical/landing_lights_on:0
+sw_item: Taxi Lights|OFF:sim/cockpit/electrical/taxi_light_on:0
+sw_continue: CLIMB
+
+sw_checklist: CLIMB
+sw_rcolsize:60
+sw_itemvoid:.................................................
+sw_itemvoid: CLIMB 140 IAS / 2000 RPM
+sw_itemvoid:.................................................
+sw_item: Flaps|RETRACTED:sim/flightmodel2/controls/flap_handle_deploy_ratio:0.0
+sw_item: Propeller Levers|2000 RPM:(sim/cockpit2/engine/indicators/engine_speed_rpm[0]:1950|2050)&&(sim/cockpit2/engine/indicators/engine_speed_rpm[1]:1950|2050)
+sw_item: Autofeather|OFF:sim/cockpit/switches/auto_feather_mode[1]:0
+sw_item: Engines Instruments|WITHIN MAXIMUM LIMITS
+sw_continue: CRUISE
+
+sw_checklist: CRUISE
+sw_rcolsize:60
+sw_item: Cruise |READY
+sw_itemvoid:.................................................
+sw_itemvoid: CLIMB 105 IAS / 2200 RPM
+sw_itemvoid:.................................................
+sw_remark: CRUISE 195 IAS / 1800 RPM **93% Turbine is good**
+sw_itemvoid:.................................................
+sw_item: Cruise Power|SET
+sw_item: Both Cowl Flaps| CLOSED
+sw_item: Engine Instruments|CHECK
+sw_item: Fuel Systems|CHECK
+sw_item: Ice Protection Equipment|USE WHEN O.A.T. BELOW 5 degrees C
+sw_continue: DESCENT
+
+sw_checklist: DESCENT
+sw_rcolsize:60
+sw_item: Descent|READY
+sw_itemvoid:.................................................
+sw_itemvoid: CRUISE 195 IAS / 1800 RPM **93% Turbine is good**
+sw_itemvoid:.................................................
+sw_remark: DESCENT 195 IAS / 1800 RPM
+sw_itemvoid:.................................................
+sw_item: Descent Power|SET
+sw_item: Altimeters|SET
+sw_continue: APPROACH
+
+sw_checklist: APPROACH
+sw_rcolsize:60
+sw_item: Approach|READY
+sw_itemvoid:.................................................
+sw_itemvoid: DESCENT 195 IAS / 1800 RPM
+sw_itemvoid:.................................................
+sw_remark: APPROACH 150 IAS / 1900 RPM
+sw_itemvoid:.................................................
+sw_item: Approach Power|SET
+sw_item: Auto Feather|ARM:sim/cockpit/switches/auto_feather_mode:1
+sw_item: Flaps|AS REQUIRED
+sw_item: Prop Sync|OFF:sim/cockpit/switches/prop_sync_on:0
+sw_item: Landing Gear|DOWN:sim/cockpit2/controls/gear_handle_down:1
+sw_item: Landing Lights|OFF:sim/cockpit/electrical/landing_lights_on:1
+sw_continue: LANDING
+
+sw_checklist: LANDING
+sw_rcolsize:60
+sw_itemvoid:.................................................
+sw_itemvoid: APPROACH 150 IAS / 1900 RPM
+sw_itemvoid:.................................................
+sw_remark: LANDING 140 IAS / 2000 RPM
+sw_itemvoid:.................................................
+sw_item: Landed |CONFIRM
+sw_continue: AFTER LANDING
+
+sw_checklist: AFTER LANDING
+sw_rcolsize:60
+sw_itemvoid:.................................................
+sw_item: Taxi Lights|ON:sim/cockpit/electrical/taxi_light_on:1
+sw_item: Condition Lever|LOW IDLE:sim/cockpit2/engine/actuators/mixture_ratio_all:<0.5
+sw_item: Wing Flaps|UP:sim/flightmodel/controls/wing1l_fla1def:0
+sw_item: Strobe Light|OFF:sim/cockpit/electrical/strobe_lights_on:0
+sw_item: Transponder|SET & STANDBY:sim/cockpit/radios/transponder_mode:1
+sw_continue: SHUTDOWN
+
+sw_checklist: SHUTDOWN
+sw_rcolsize:60
+sw_itemvoid:.................................................
+sw_item: Shutdown|READY
+sw_item: Parking Brakes|SET:sim/flightmodel/controls/parkbrake:>0
+sw_item: Transponder|OFF:sim/cockpit/radios/transponder_mode:0
+sw_item: EFIS Power|OFF
+sw_item: Avionics Master Switch|OFF:sim/cockpit/electrical/avionics_on:0
+sw_item: Electrical Equipment|OFF
+sw_item: Condition Lever|IDLE CUT-OFF:sim/cockpit2/engine/actuators/mixture_ratio_all:0
+sw_item: External Lights|OFF:(sim/cockpit/electrical/taxi_light_on:0)&&(sim/cockpit/electrical/taxi_light_on:0)&&(sim/cockpit/electrical/beacon_lights_on:0)&&(sim/cockpit/electrical/strobe_lights_on:0)&&(sim/cockpit/electrical/nav_lights_on:0)
+sw_item: Alternators|BOTH OFF:(sim/cockpit/electrical/generator_on[0]:0)&&(sim/cockpit/electrical/generator_on[1]:0)
+sw_item: Battery Master Switch|OFF:sim/cockpit/electrical/battery_on:0
