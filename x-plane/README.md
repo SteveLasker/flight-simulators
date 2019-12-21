@@ -46,12 +46,14 @@ A set of enhanced objects that will make the default experiences appear more rea
 ### Scenery Add-Ons
 
 - [Project Manhattan](https://forums.x-plane.org/index.php?/files/file/56010-x-plane-11-project-manhattan/)  
-  I had high hopes for this one. It does add some nice additons to the Chelsea area, along the waterfront. As a free add-on, it's great for those that know the city and want to get more of a local feel.
+  I had high hopes for this one. It does add some nice additions to the Chelsea area, along the waterfront. As a free add-on, it's great for those that know the city and want to get more of a local feel.
 
 ### Airport Add-Ons
 
+- [KPHX Phoenix Sky Harbor International](https://forums.x-plane.org/index.php?/files/file/26819-kphx-phoenix-sky-harbor-international/)
+- [KRNO Reno-Tahoe International](https://forums.x-plane.org/index.php?/files/file/55976-krno-reno-tahoe-international/)
 - [KSFO San Francisco](https://forums.x-plane.org/index.php?/files/file/29166-ksfo-san-francisco-international-airport-and-city/)
-- [KPHX - Phoenix Sky Harbor International](https://forums.x-plane.org/index.php?/files/file/26819-kphx-phoenix-sky-harbor-international/)
+
 
 ## Aircraft
 
