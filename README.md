@@ -11,6 +11,8 @@ Content related to learning and working with various flight simulators
 
 My current setup consists of the following:
 
+![](./media/simsetup.jpg)
+
 - [CPU: Intel i9-9900KF](https://www.amazon.com/Intel-BX80684I99900KF-i9-9900KF-Processor-Unlocked/dp/B07MGBZWDZ)
 - [Mother Board: Asus ROG Strix Z390-E Gaming Motherboard LGA1151](https://www.amazon.com/gp/product/B07HCPLQ2H)
 - [GPU: ASUS RTX-2080 Ti](https://www.amazon.com/ASUS-GeForce-Dual-Fan-Graphics-DUAL-RTX2080TI-11G/)
