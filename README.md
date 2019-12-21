@@ -3,8 +3,8 @@ Content related to learning and working with various flight simulators
 
 ## Table of Contents
 - [Computer Setup](#computer-setup)
-- [Specific Flight Simulators](#specific-flight-simulators)
 - [Learning to Fly](#learning-to-fly)
+- [Specific Flight Simulators](#specific-flight-simulators)
 - [How Do I](#how-do-i)
 
 ## Computer Setup
@@ -31,7 +31,7 @@ My current setup consists of the following:
 - [X-Plane](./x-plane/README.md)
 - Microsoft Flight Simulator 2020 - comming soon, *I hope*
 
-- How Do I  
+## How Do I
   A list of things I need to research and update here
   - know which runway to use?
   - know what to turn on in each plane?
