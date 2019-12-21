@@ -3,12 +3,13 @@
 Here you'll find various tidbits of information I've collected as I experiemnt with [X-Plane](https://www.x-plane.com/)
 
 ## My X-Plane Contents
-- [Joystick Configurations](./joystick-configurations/)
-- [XChecklists](./xchecklists/)
+- [Installing X-Plane](#installing-x-plane)
 - [Dependency Management](#dependency-management)
 - [Scenery](#scenery)
 - [Aircraft](#aircraft)
-
+- [Plugins](#plugins)
+- [Joystick Configurations](./joystick-configurations/)
+- [Check Lists](./xchecklists/)
 ## Installing X-Plane
 
 - Purchase: My first mistake was to assume I had to buy X-Plane as traditional software. I found it on Amazon, and awaited a DVD install. Which I then had to confirm I even had one.  
