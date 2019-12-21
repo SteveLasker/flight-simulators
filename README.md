@@ -56,5 +56,5 @@ My current setup consists of the following:
   A list of things I need to research and update here. 
   - Which runway to use, and how to determine the wind angle?
   - What is the startup and flight routine for each plane? Jumping in a plane that's already running isn't as much fun.
-  - Configure all the buttons on each joystick, yoke and foot pedal controls? This turned out to be much more tedious than I had expected. See [X-Plane Joystick Configurations]()./x-plane/joystick-configurations/).
+  - Configure all the buttons on each joystick, yoke and foot pedal controls? This turned out to be much more tedious than I had expected. See [X-Plane Joystick Configurations](./x-plane/joystick-configurations/).
   - Get the most sim performance out of my hardware?
