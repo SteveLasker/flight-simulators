@@ -50,7 +50,7 @@ My current setup consists of the following:
 ## Specific Flight Simulators
 
 - [X-Plane](./x-plane/README.md)
-- Microsoft Flight Simulator 2020 - combing soon, *I hope*
+- [Microsoft Flight Simulator 2020](https://www.xbox.com/games/microsoft-flight-simulator)
 
 ## How Do I
   A list of things I need to research and update here. 
